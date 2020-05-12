@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="151dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="128dp"
+        android:text="회원가입"
+        android:textSize="35dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/SignupId"
+        android:layout_width="210dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="112dp"
+        android:hint="ID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/SignupPw"
+        android:layout_width="210dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="112dp"
+        android:hint="PassWord"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/SignupEmail"
+        android:layout_width="210dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="112dp"
+        android:hint="E-mail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/SingupPNumber"
+        android:layout_width="210dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="228dp"
+        android:layout_marginEnd="112dp"
+        android:hint="핸드폰 번호(-없이 입력)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/SingupPhoto"
+        android:layout_width="122dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="496dp"
+        android:text="사진 첨부하기"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="218dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="40dp"
+        android:id="@+id/SignupPhotoText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <Button
+        android:id="@+id/SingupBtn"
+        android:layout_width="238dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="24dp"
+        android:text="회원가입하기"
+        app:layout_constraintBottom_toTopOf="@+id/ExitBtn"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/ExitBtn"
+        android:layout_width="238dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="32dp"
+        android:text="뒤로"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
